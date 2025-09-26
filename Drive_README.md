@@ -133,9 +133,5 @@ Server runs at 👉 `http://localhost:3000`
 
 ---
 
-## 📝 License
-This project is open-sourced under the **MIT License**.
-
----
 
 > Last updated: 2025-09-26
