@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome | Secure File Manager</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+      color: #333;
+    }
+
+    .header {
+      padding: 60px 20px 40px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #555;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 50px;
+      padding-bottom: 80px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      text-align: center;
+      width: 300px;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    .card a {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: 500;
+      transition: background-color 0.2s ease;
+    }
+
+    .card a:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Welcome to Secure File Manager</h1>
+    <p>
+      A safe, streamlined platform to upload, manage, and access your documents securely. Register today to experience secure file sharing and access from anywhere.
+    </p>
+  </div>
+
+  <div class="actions">
+    <div class="card">
+      <h2>New Here?</h2>
+      <p>Create your account to start uploading and organizing your files securely.</p>
+      <a href="/user/register">Register</a>
+    </div>
+
+    <div class="card">
+      <h2>Already Registered?</h2>
+      <p>Log in to your dashboard and access your uploaded files instantly.</p>
+      <a href="/user/login">Login</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; <%= new Date().getFullYear() %> Secure File Manager. All rights reserved.
+  </footer>
+
+</body>
+</html>
